@@ -1,0 +1,28 @@
+include ../../../../views/shared/global/jade-helpers.jade
+- dataObj = data;
+
+section.meta-wrap
+  .container
+    .row.marginless
+      ul.meta-list.columns.ten.offset-by-one
+        - index = 0;
+        - length = locals.getObjectLength(dataObj);
+
+        each item in dataObj
+          if (index === 0)
+            li.first.columns.three.alpha
+              span.t6.t6-grey.t6-marginless= item.title
+              p.p3.p3-marginless.desc= item.description
+          else if (index === length - 1)
+            li.columns.three.omega
+              span.t6.t6-grey.t6-marginless= item.title
+              p.p3.p3-marginless.desc= item.description
+          else 
+            li.columns.four
+              span.t6.t6-grey.t6-marginless= item.title
+              p.p3.p3-marginless.desc= item.description
+
+          - index++
+    .row.marginless
+      .columns.ten.offset-by-one
+        .rule.light

@@ -1,0 +1,39 @@
+include ./shared/global/jade-helpers.jade
+
+doctype html
+
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name="viewport" content="initial-scale=1.0, user-scalable=no")
+  body.main-portfolio
+    section
+      .spacer-top-large
+        .container
+          .row
+            h1.type-header-1.type--white.text-align-center='My passion is in making beautiful responsive web applications.'
+    section
+      .spacer-top-large
+      .container
+        .row
+          +svgIcon('cujojp', 'logo fill--white')
+          div(class="col-12@xs")
+            h1.type-header-1.type--white="Rutrum molestie bibendum elit"
+            h1.type-header-2.type--white="Rutrum molestie bibendum elit lacinia"
+            h1.type-header-3.type--white="Rutrum molestie bibendum elit lacinia enim"
+            h1.type-header-4.type--white="Rutrum molestie bibendum elit lacinia enim"
+            h1.type-header-5.type--white="Rutrum molestie bibendum elit lacinia enim"
+      .spacer-top-large
+    section.background--white
+      .spacer-top-large
+      .container
+        .row
+          +svgIcon('cujojp', 'logo fill--white')
+          div(class="col-12@xs")
+            h1.type-header-1.type--pink-dark="Rutrum molestie bibendum elit"
+            h1.type-header-2.type--pink-dark="Rutrum molestie bibendum elit lacinia"
+            h1.type-header-3.type--pink-dark="Rutrum molestie bibendum elit lacinia enim"
+            h1.type-header-4.type--pink-dark="Rutrum molestie bibendum elit lacinia enim"
+            h1.type-header-5.type--pink-dark="Rutrum molestie bibendum elit lacinia enim"
+      .spacer-top-large

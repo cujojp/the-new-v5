@@ -1,0 +1,25 @@
+include ./shared/global/jade-helpers.jade
+
+doctype html
+-dataObj = data
+-rootData = db || data
+
+html
+  head
+    link(rel='stylesheet', href='http://fast.fonts.net/cssapi/5bbf6f06-d191-4299-a581-6497ea2105ca.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    meta(name="viewport" content="initial-scale=1.0, user-scalable=no")
+  body.app
+    include ../public/svg/icons.svg
+    .app-container-wrap
+      +partial('shared/components/header.jade', dataObj)
+      .app-container.slide-app
+        .content-block
+          block content
+      .app-header.slide-app
+        +partial('shared/components/side-nav.jade', rootData)
+      
+
+    script(src='https://maps.googleapis.com/maps/api/js?sensor=false')
+    script(src='/javascripts/all.js')
+      

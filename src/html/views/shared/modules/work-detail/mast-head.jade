@@ -1,0 +1,20 @@
+include ../../../../views/shared/global/jade-helpers.jade
+- dataObj = data;
+
+section.header-wrap
+  .media-container.default
+    .media-element.scroll-target
+      +partial('shared/components/video-element.jade',dataObj.media)
+    .media-element-inner.text-center
+      .table-center-wrap.full
+        .table-center
+          .container
+            .row.padded-xl-top
+              .eight.columns.offset-by-two.media-inner-content
+                h1.t1.t1-light= dataObj.title
+    .media-background
+  .subhead-wrap.text-center
+    .container
+      .row
+        .six.columns.offset-by-three
+          h2.t3.t3-bold= dataObj.summary

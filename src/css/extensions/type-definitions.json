@@ -1,0 +1,159 @@
+{
+  "type-definitions": {
+    "'Display Text'": {
+    },
+    "Headers" : {
+      "type-header-1": {
+        "docs-demo": {
+          "demo-text": "'Hiss at vacuum cleaner. Kitty loves pigs jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed'"
+        },
+        "font-family": "avenir-demi-italic",
+        "font-weight": "normal",
+        "color": "pink-dark",
+        "margin-top": "flat",
+
+        "font-size": 72,
+        "line-height": 1.2,
+
+        "breakpoints": {
+          "sm": {
+            "font-size": 72
+          }
+        }
+      },
+      "type-header-2": {
+        "docs-demo": {
+          "demo-text": "'Claw drapes step on your keyboard while you are gaming and then turn in a circle.'"
+        },
+        "font-family": "avenir-demi-italic",
+        "font-weight": "normal",
+        "color": "pink-dark",
+        "margin-top": "flat",
+
+        "font-size": 48,
+        "line-height": 1.2,
+
+        "breakpoints": {
+          "sm": {
+            "font-size": 48
+          }
+        }
+      },
+      "type-header-3": {
+        "docs-demo": {
+          "demo-text": "'Lay on arms while you are using the keyboard'"
+        },
+        "font-family": "avenir-demi-italic",
+        "font-weight": "normal",
+        "color": "pink-dark",
+        "margin-top": "flat",
+
+        "font-size": 32,
+        "line-height": 1.4,
+
+        "breakpoints": {
+          "sm": {
+            "font-size": 32
+          }
+        }
+      },
+      "type-header-4": {
+        "docs-demo": {
+          "demo-text": "'Lay on arms while you are using the keyboard'"
+        },
+        "font-family": "avenir-demi-italic",
+        "font-weight": "normal",
+        "color": "pink-dark",
+        "margin-top": "flat",
+
+        "font-size": 21,
+        "line-height": 1.4,
+
+        "breakpoints": {
+          "sm": {
+            "font-size": 21
+          }
+        }
+      },
+      "type-header-5": {
+        "docs-demo": {
+          "demo-text": "'Lay on arms while you are using the keyboard'"
+        },
+        "font-family": "avenir-demi-italic",
+        "font-weight": "normal",
+        "color": "pink-dark",
+        "margin-top": "flat",
+
+        "font-size": 14,
+        "line-height": 1.4,
+
+        "breakpoints": {
+          "sm": {
+            "font-size": 14
+          }
+        }
+      }
+    },
+    "Body-Copy": {
+      "type-body-1": {
+        "docs-demo": {
+          "demo-text": "'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo consectetur, sollicitudin erat dapibus, elementum ipsum.'",
+          "demo-text2": "'Nullam tincidunt felis a dignissim imperdiet. Donec sodales id risus vitae fermentum.'"
+        },
+        "font-family": "avant-garde-dmei",
+        "font-weight": "normal",
+        "color": "white",
+        "margin-top": "flat",
+        "margin-bottom": 20,
+        "font-size": 18,
+        "line-height": 1.4,
+
+        "breakpoints": {
+          "sm": {
+            "margin-bottom": 32,
+            "font-size": 24
+          }
+        }
+      },
+      "type-body-2": {
+        "docs-demo": {
+          "demo-text": "'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo consectetur, sollicitudin erat dapibus, elementum ipsum.'",
+          "demo-text2": "'Nullam tincidunt felis a dignissim imperdiet. Donec sodales id risus vitae fermentum.'"
+        },
+        "font-family": "avant-garde-dmei",
+        "font-weight": "normal",
+        "color": "gray40",
+        "margin-top": "flat",
+        "margin-bottom": 20,
+        "font-size": 14,
+        "line-height": 1.4,
+
+        "breakpoints": {
+          "sm": {
+            "margin-bottom": 32,
+            "font-size": 18
+          }
+        }
+      },
+      "type-body-3": {
+        "docs-demo": {
+          "demo-text": "'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.'",
+          "demo-text2": "'Nullam tincidunt felis a dignissim imperdiet.'"
+        },
+        "font-family": "sans-serif",
+        "font-weight": "normal",
+        "color": "gray40",
+        "margin-top": "flat",
+
+        "font-size": 14,
+        "line-height": 1.4,
+
+        "breakpoints": {
+          "sm": {
+            "font-size": 16
+          }
+        }
+      }
+    }
+  }
+}

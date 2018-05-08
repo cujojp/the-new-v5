@@ -1,0 +1,20 @@
+include ../../../../views/shared/global/jade-helpers.jade
+- dataObj = data;
+
+section.detail-navigation
+  .nav-wrap
+    .container
+      .row
+        .six.columns.offset-by-one.nav.left
+          .work-nav-btn-wrap
+            a(href="/work").work-nav-btn
+              span.label-wrap
+                +svgIcon('keyboard', 'white size-16')
+                span.t3.t3-marginless.t3-light.label View Portfolio
+
+        .four.columns.offset-by-one.nav.right
+          .work-nav-btn-wrap
+            a(href="#NEXT").work-nav-btn
+              span.label-wrap
+                +svgIcon('arrow-right', 'white size-16')
+                span.t3.t3-marginless.t3-light.label View Next Project
