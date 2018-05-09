@@ -2,5 +2,5 @@
   ID = "186eff49-83c9-495a-8c2f-52ee6dadc19c"
 
 [build]
-  command = "npm run prod"
+  command = "npm install && npm run prod"
   publish = "dist"
