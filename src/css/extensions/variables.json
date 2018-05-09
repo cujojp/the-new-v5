@@ -1,9 +1,9 @@
 {
   "colors": {
-    "blue-dark": "#005992",
-    "blue": "#1b9ec6",
     "pink": "#e24778",
     "pink-dark": "#d42059",
+    "blue-dark": "#2057d4",
+    "blue": "#77b0cd",
     "white": "#ffffff",
     "gray90": "#edf0f1",
     "gray80": "#dfe4e6",
@@ -16,9 +16,8 @@
   },
 
   "font-families": {
-    "sans-serif": "'\"Avant Garde Book\", Helvetica, Arial, sans-serif'",
+    "sans-serif": "'\"AvenirNextW01-Regular\", \"Helvetica Neue\", Helvetica, Arial, sans-serif'",
     "avenir-demi-italic": "'\"AvenirNextLTW01-Italic\", Helvetica, Arial, sans-serif'",
-    "avant-garde-book": "'\"Avant Garde Book\", Helvetica, Arial, sans-serif'",
     "posterama": "'\"Posterama\", Helvetica, Arial, sans-serif'",
     "code": "'Consolas, Menlo, Monaco, \"Lucida Console\", monospace'"
   },

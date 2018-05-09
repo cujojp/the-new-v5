@@ -12,11 +12,17 @@
         "color": "pink-dark",
         "margin-top": "flat",
 
-        "font-size": 72,
+        "font-size": 32,
         "line-height": 1.2,
 
         "breakpoints": {
           "sm": {
+            "font-size": 32
+          },
+          "md": {
+            "font-size": 48
+          },
+          "lg": {
             "font-size": 72
           }
         }
@@ -30,11 +36,17 @@
         "color": "pink-dark",
         "margin-top": "flat",
 
-        "font-size": 48,
+        "font-size": 21,
         "line-height": 1.2,
 
         "breakpoints": {
           "sm": {
+            "font-size": 21
+          },
+          "md": {
+            "font-size": 32
+          },
+          "lg": {
             "font-size": 48
           }
         }
@@ -48,11 +60,17 @@
         "color": "pink-dark",
         "margin-top": "flat",
 
-        "font-size": 32,
+        "font-size": 18,
         "line-height": 1.4,
 
         "breakpoints": {
           "sm": {
+            "font-size": 18
+          },
+          "md": {
+            "font-size": 21
+          },
+          "lg": {
             "font-size": 32
           }
         }
@@ -66,11 +84,17 @@
         "color": "pink-dark",
         "margin-top": "flat",
 
-        "font-size": 21,
+        "font-size": 16,
         "line-height": 1.4,
 
         "breakpoints": {
           "sm": {
+            "font-size": 16
+          },
+          "md": {
+            "font-size": 19
+          },
+          "lg": {
             "font-size": 21
           }
         }
@@ -100,7 +124,7 @@
           "demo-text": "'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo consectetur, sollicitudin erat dapibus, elementum ipsum.'",
           "demo-text2": "'Nullam tincidunt felis a dignissim imperdiet. Donec sodales id risus vitae fermentum.'"
         },
-        "font-family": "avant-garde-dmei",
+        "font-family": "sans-serif",
         "font-weight": "normal",
         "color": "white",
         "margin-top": "flat",
@@ -120,9 +144,9 @@
           "demo-text": "'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo consectetur, sollicitudin erat dapibus, elementum ipsum.'",
           "demo-text2": "'Nullam tincidunt felis a dignissim imperdiet. Donec sodales id risus vitae fermentum.'"
         },
-        "font-family": "avant-garde-dmei",
+        "font-family": "sans-serif",
         "font-weight": "normal",
-        "color": "gray40",
+        "color": "white",
         "margin-top": "flat",
         "margin-bottom": 20,
         "font-size": 14,
@@ -131,7 +155,7 @@
         "breakpoints": {
           "sm": {
             "margin-bottom": 32,
-            "font-size": 18
+            "font-size": 16
           }
         }
       },
@@ -142,15 +166,15 @@
         },
         "font-family": "sans-serif",
         "font-weight": "normal",
-        "color": "gray40",
+        "color": "white",
         "margin-top": "flat",
 
-        "font-size": 14,
+        "font-size": 12,
         "line-height": 1.4,
 
         "breakpoints": {
           "sm": {
-            "font-size": 16
+            "font-size": 14
           }
         }
       }

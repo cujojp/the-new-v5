@@ -2,3 +2,27 @@ body,
 html {
   background: map-get($colors, pink-dark);
 }
+
+$pink:   #e24778;
+$pink-dark: #d42059;
+$blue:   #77b0cd;
+$blue-dark:  #2057d4;
+
+.background--animated {
+  background: linear-gradient(
+    135deg, 
+    map-get($colors, pink-dark), 
+    map-get($colors, pink), 
+    map-get($colors, pink-dark), 
+    map-get($colors, blue), 
+    map-get($colors, pink-dark));
+
+  background-size:1000% 1000%;
+  animation:drift 20s ease infinite;
+}
+
+@keyframes drift {
+    0%   { background-position:43% 0%;   }
+    50%  { background-position:58% 100%; }
+    100% { background-position:43% 0%;   }
+}
