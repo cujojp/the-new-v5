@@ -3,4 +3,4 @@
 
 [build]
   publish = "dist"
-  command = "npm install && npm run build"
+  command = "npm install pug && npm install && npm run build"
