@@ -47,8 +47,8 @@
     "node-sass-json-importer": "^3.2.0",
     "npm": "^6.0.0",
     "path": "^0.12.7",
+    "pug": "^2.0.3",
     "pug-loader": "^2.4.0",
-    "puh": "^1.0.0",
     "svgo-loader": "^2.1.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack-merge": "^4.1.2"
