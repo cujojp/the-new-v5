@@ -17,6 +17,7 @@
 
   "font-families": {
     "sans-serif": "'\"AvenirNextW01-Regular\", \"Helvetica Neue\", Helvetica, Arial, sans-serif'",
+    "avenir-italic": "'\"AvenirNextW01-ThinItali\", Helvetica, Arial, sans-serif'",
     "avenir-demi-italic": "'\"AvenirNextLTW01-Italic\", Helvetica, Arial, sans-serif'",
     "posterama": "'\"Posterama\", Helvetica, Arial, sans-serif'",
     "code": "'Consolas, Menlo, Monaco, \"Lucida Console\", monospace'"
