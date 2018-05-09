@@ -10,7 +10,6 @@ function resolve (dir) {
 
 module.exports = options => {
   return {
-    watch: true,
     entry: './src/js/index.js',
     output: {
       filename: 'bundle.js',
