@@ -62,3 +62,4 @@ typings/
 
 # Build directory
 dist/
+node_modules/
