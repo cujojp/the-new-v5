@@ -32,22 +32,16 @@ module.exports = options => {
           test: /\.scss$/,
           loaders: ["style", "css", "sass"]
         },
+        {
+          test: /\.src\/svg\/.*\.svg$/, // your icons directory
+          loader: 'svg-sprite-loader',
+          options: {
+            extract: true,
+            spriteFilename: './dist/icons.svg', // this is the destination of your sprite sheet
+          }
+        }
       ],      
       rules: [
-        {
-          test: /\.svg$/,
-          include: [resolve('src/svg')],
-          use: [
-            { 
-              loader: 'svg-sprite-loader',
-              options: {
-                extract: true,
-                spriteFilename: svgPath => `sprite${svgPath.substr(-4)}`
-              }
-            },
-            'svg-fill-loader',
-          ]
-        },
         { 
           test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
           loader: "url-loader?limit=10000&minetype=application/font-woff" 
@@ -98,10 +92,7 @@ module.exports = options => {
         template: path.join(__dirname, 'src/html/index.pug'),
       }),
       new SpriteLoaderPlugin({
-        plainSprite: true,
-        spriteAttrs: {
-          id: 'my-custom-sprite-id'
-        }
+        plainSprite: true
       })
     ],
     devtool: "source-map"

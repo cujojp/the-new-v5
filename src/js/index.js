@@ -1,3 +1,10 @@
 // index.js
 import style from "../css/styles.scss";
-import cujojpIcon from '../svg/cujojp.svg';
+function requireAll(r) {
+  r.keys().forEach(r);
+}
+
+requireAll(require.context('../svg/', true, /\.svg$/));
+
+
+
