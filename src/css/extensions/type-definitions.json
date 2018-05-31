@@ -17,10 +17,10 @@
 
         "breakpoints": {
           "sm": {
-            "font-size": 32
+            "font-size": 56
           },
           "md": {
-            "font-size": 48
+            "font-size": 64
           },
           "lg": {
             "font-size": 72

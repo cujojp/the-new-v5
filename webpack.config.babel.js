@@ -37,7 +37,7 @@ module.exports = options => {
           loader: 'svg-sprite-loader',
           options: {
             extract: true,
-            spriteFilename: './dist/icons.svg', // this is the destination of your sprite sheet
+            spriteFilename: './icons.svg', // this is the destination of your sprite sheet
           }
         }
       ],      
@@ -92,7 +92,7 @@ module.exports = options => {
         template: path.join(__dirname, 'src/html/index.pug'),
       }),
       new SpriteLoaderPlugin({
-        plainSprite: true
+        plainSprite: true,
       })
     ],
     devtool: "source-map"

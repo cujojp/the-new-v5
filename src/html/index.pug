@@ -8,13 +8,13 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name="viewport" content="initial-scale=1.0, user-scalable=no")
   body.main-portfolio
+    include ../svg/icons.svg
     section.background--animated
-      +svgIcon('cujojp', 'logo fill--white')
-      svg.icon.logo.fill--white
-        use(xlink:href='#cujojp')
-      .container
-        .spacer-top-large
-        .row
+      .container.mast-head
+        .row.spacer-top-small
+          div(class="col-3@sm")
+            +svgIcon('cujojp', 'logo fill--white')
+        .row.spacer-top-large
           div(class="col-10@sm col-push-1@sm")
             h1.type-header-1.type--white.text-align-center='My passion is in making beautiful responsive web applications.'
         .row

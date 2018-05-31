@@ -45,6 +45,9 @@
   "dependencies": {
     "@odopod/odo-sassplate": "^2.0.0",
     "babel-runtime": "^6.26.0",
+    "gulp": "^3.9.1",
+    "gulp-filelog": "^0.4.1",
+    "gulp-svg-sprite": "^1.4.0",
     "node-sass-json-importer": "^3.2.0",
     "npm": "^6.0.0",
     "path": "^0.12.7",
