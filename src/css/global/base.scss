@@ -9,6 +9,8 @@ $blue:   #77b0cd;
 $blue-dark:  #2057d4;
 
 .background--animated {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(
     135deg, 
     map-get($colors, pink-dark), 
