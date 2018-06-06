@@ -3,6 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import HtmlWebpackPugPlugin from 'html-webpack-pug-plugin';
 import path from 'path';
 import SpriteLoaderPlugin from 'svg-sprite-loader/plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -16,31 +17,6 @@ module.exports = options => {
       path: path.resolve(__dirname, 'dist')
     },
     module: {
-      loaders: [
-        {
-          test: /\.pug$/,
-          loader: 'pug-loader'
-        },
-        { 
-          test: /\.(woff|woff2|eot|ttf)?$/,
-          loader: 'url-loader?limit=100000',
-          options: {
-            name: "[name].[ext]",
-          }
-        },
-        {
-          test: /\.scss$/,
-          loaders: ["style", "css", "sass"]
-        },
-        {
-          test: /\.src\/svg\/.*\.svg$/, // your icons directory
-          loader: 'svg-sprite-loader',
-          options: {
-            extract: true,
-            spriteFilename: './icons.svg', // this is the destination of your sprite sheet
-          }
-        }
-      ],      
       rules: [
         { 
           test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
@@ -57,7 +33,9 @@ module.exports = options => {
         },
         {
           test: /\.scss$/,
-          use: [{
+          use: [
+          MiniCssExtractPlugin.loader,  
+          {
             loader: "style-loader"
           }, {
             loader: "css-loader", 
@@ -85,9 +63,25 @@ module.exports = options => {
             },
           ],
         },
+        {
+          test: /.js$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'babel-loader',
+              options: {
+                cacheDirectory: true,
+              },
+            },
+          ],
+        },
       ],
     },
     plugins: [
+      new MiniCssExtractPlugin({
+        filename: "[name].css",
+        chunkFilename: "[id].css"
+      }),
       new HtmlWebpackPlugin({
         template: path.join(__dirname, 'src/html/index.pug'),
       }),
